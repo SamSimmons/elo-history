@@ -1,0 +1,33 @@
+:root {
+  --body-text: 'Karla', sans-serif;
+  --header-text: 'Eczar', serif;
+  --dark: #5C5C5C;
+  --primary: #CFA3E0;
+}
+
+body {
+  color: var(--dark);
+  font-family: var(--body-text);
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background: var(--primary);
+  display: inline-block;
+  font-family: var(--header-text);
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.update-time {
+  font-size: .8rem;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.chart {
+  box-shadow: 1px 1px 3px 0px rgba(80, 80, 80, .3);
+  margin: 30px;
+}
