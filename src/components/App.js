@@ -1,5 +1,6 @@
 import React from 'react'
 import TeamSelector from './TeamSelector'
+import Chart from './Chart'
 
 const App = (props) => {
   return (
@@ -9,10 +10,7 @@ const App = (props) => {
         <div className="update-time">Updated July 30 2017</div>
       </div>
       <TeamSelector />
-      <div className="chart">
-        <svg />
-      </div>
-
+      <Chart />
     </div>
   )
 }

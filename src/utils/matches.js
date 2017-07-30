@@ -1,4 +1,5 @@
-import { flatten, uniq, map, forEach, reduce } from 'lodash'
+import { flatten, uniq, map, forEach, reduce, includes, filter, orderBy } from 'lodash'
+import { timeMonth } from 'd3'
 
 export function getTeamNames(matches) {
   const teams = map(flatten(matches), 'team')
@@ -49,4 +50,35 @@ function calcRating(teamRating, opponentRating, resultStr) {
   const chanceToWin = 1 / (1 + Math.pow(10, (opponentRating - teamRating) / 400))
   const ratingDelta = Math.round(32 * (result - chanceToWin))
   return teamRating + ratingDelta
+}
+
+export function filterTeams(matches) {
+  const whiteList = [
+    "Australia",
+    "Bangladesh",
+    "England,",
+    "India",
+    "New Zealand",
+    "Pakistan",
+    "South Africa",
+    "Sri Lanka",
+    "West Indies",
+    "Zimbabwe"
+  ]
+  return filter(matches, (match) => {
+    const [ first, second ] = map(match, (inn) => inn.team)
+    return (includes(whiteList, first) && includes(whiteList, second))
+  })
+}
+
+export function binMatchesByDate(matches) {
+  const inOrder = orderBy(matches, (m) => new Date(m[0].date))
+  const months = timeMonth.range(new Date(inOrder[0][0].date), new Date(inOrder[inOrder.length - 1][0].date))
+  const bins = map(months, (month) => {
+    return {
+      matches: filter(inOrder, (match) => (new Date(match[0].date) < month)),
+      date: month
+    }
+  })
+  return bins
 }

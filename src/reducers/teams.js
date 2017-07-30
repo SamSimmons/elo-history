@@ -2,17 +2,25 @@
 
 import type { State } from '../types/reducers'
 import type { Action } from '../types/actions'
-import { getTeamNames, calculateELO } from '../utils/matches'
+import { getTeamNames, calculateELO, filterTeams, binMatchesByDate } from '../utils/matches'
+import { map } from 'lodash'
 
-export default function (state: State = {list: []}, action: Action) {
+export default function (state: State = {list: [], elo: {}}, action: Action) {
   switch (action.type) {
     case 'LOAD_MATCHES': {
-      const teams = getTeamNames(action.matches)
-      const elo = calculateELO(action.matches, teams)
-      console.log("elo", elo)
+      const validMatches = filterTeams(action.matches)
+      const chunks = binMatchesByDate(validMatches)
+      const teams = getTeamNames(validMatches)
+      const chartData = map(chunks, ({matches, date}) => {
+        return {
+          date,
+          ratings: calculateELO(matches, teams)
+        }
+      })
       return {
         ...state,
-        list: teams
+        list: teams,
+        chartData
       }
     }
     default: {
