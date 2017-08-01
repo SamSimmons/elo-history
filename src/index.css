@@ -26,8 +26,3 @@ body {
   padding-left: 15px;
   text-transform: uppercase;
 }
-
-.chart {
-  box-shadow: 1px 1px 3px 0px rgba(80, 80, 80, .3);
-  margin: 30px;
-}

@@ -1,0 +1,27 @@
+.chart__wrapper {
+  max-width: 900px;
+  margin: 30px;
+}
+
+.chart {
+  box-shadow: 1px 1px 3px 0px rgba(80, 80, 80, .3);
+}
+
+.Axis path,
+.Axis line {
+  stroke: #E0E0E0;
+}
+
+.Axis text {
+  font-size: 11px;
+  fill: black;
+}
+
+.Axis-Bottom text {
+  transform: rotate(-45deg);
+  text-anchor: end;
+}
+
+.chart__line {
+
+}
