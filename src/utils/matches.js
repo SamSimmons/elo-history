@@ -56,7 +56,7 @@ export function filterTeams(matches) {
   const whiteList = [
     "Australia",
     "Bangladesh",
-    "England,",
+    "England",
     "India",
     "New Zealand",
     "Pakistan",

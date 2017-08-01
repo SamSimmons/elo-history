@@ -8,7 +8,7 @@ export default function (state: State = {selectedTeam: ""}, action: Action) {
     case 'CHANGE_SELECTED_TEAM': {
       return {
         ...state,
-        selectedTeam: action.nextTeam
+        selectedTeam: action.nextTeam.value
       }
     }
     case 'LOAD_MATCHES': {

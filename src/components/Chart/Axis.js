@@ -17,7 +17,7 @@ export default class Axis extends Component {
       .scale(this.props.scale)
       .tickSize(-this.props.tickSize)
       .tickPadding([12])
-      .ticks([8])
+      .ticks((this.props.orient === "Bottom") ? [8] : [4])
       .tickFormat(d => {
         if (this.props.time) {
           return new Date(d).toDateString()
