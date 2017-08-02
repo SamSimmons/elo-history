@@ -95,7 +95,7 @@ class Wrapper extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      margin: { top: 30, right: 30, bottom: 80, left: 40 },
+      margin: { top: 50, right: 50, bottom: 150, left: 80 },
       height: 550
     }
   }

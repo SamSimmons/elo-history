@@ -22,6 +22,20 @@ export default ({ scales, margin, dimensions }) => {
     <g>
       <Axis {...xProps} time />
       <Axis {...yProps} />
+      <line
+        className="axis-line"
+        x1={margin.left}
+        x2={margin.left}
+        y1={margin.top}
+        y2={height - margin.bottom}
+      />
+      <line
+        className="axis-line"
+        x1={margin.left}
+        x2={width - margin.right}
+        y1={height - margin.bottom}
+        y2={height - margin.bottom}
+      />
     </g>
   )
 }

@@ -4,16 +4,19 @@ import 'react-select/dist/react-select.css'
 import { connect } from 'react-redux'
 import { changeSelectedTeam } from '../../actions/app'
 import { map } from 'lodash'
+import './team-selector.css'
 
 const TeamSelector = ({ teams, selected, changeSelectedTeam }) => {
   const options = map(teams, (team) => ({ value: team, label: team }))
   return (
-    <Select
-      value={selected}
-      options={options}
-      clearable={false}
-      onChange={changeSelectedTeam}
-    />
+    <div className="team-selector">
+      <Select
+        value={selected}
+        options={options}
+        clearable={false}
+        onChange={changeSelectedTeam}
+      />      
+    </div>
   )
 }
 

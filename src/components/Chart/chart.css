@@ -1,10 +1,11 @@
 .chart__wrapper {
+  background: var(--white-grey);
   max-width: 900px;
-  margin: 30px;
 }
 
 .chart {
   box-shadow: 1px 1px 3px 0px rgba(80, 80, 80, .3);
+  font-family: cursive;
 }
 
 .Axis path,
@@ -13,8 +14,9 @@
 }
 
 .Axis text {
-  font-size: 11px;
-  fill: black;
+  font-family: 'Karla';
+  font-size: 12px;
+  fill: var(--dark);
 }
 
 .Axis-Bottom text {
@@ -22,6 +24,6 @@
   text-anchor: end;
 }
 
-.chart__line {
-
+.axis-line {
+  stroke: var(--dark);
 }
