@@ -1,0 +1,69 @@
+[
+  {
+    "team": "Australia",
+    "wins": [
+      { "type": "World Cup", "date": "8 November 1987" },
+      { "type": "World Cup", "date": "20 June 1999" },
+      { "type": "World Cup", "date": "23 March 2003" },
+      { "type": "World Cup", "date": "21 April 2007" },
+      { "type": "World Cup", "date": "29 March 2015" },
+      { "type": "Champions Trophy", "date": "5 October 2009" },
+      { "type": "Champions Trophy", "date": "5 November 2006" }
+    ]
+  },
+  {
+    "team": "Bangladesh",
+    "wins": []
+  },
+  {
+    "team": "England",
+    "wins": []
+  },
+  {
+    "team": "India",
+    "wins": [
+      { "type": "World Cup", "date": "25 June 1983" },
+      { "type": "World Cup", "date": "2 April 2011" },
+      { "type": "Champions Trophy", "date": "23 June 2013" },
+      { "type": "Champions Trophy", "date": "30 September 2002", "asterisk": true }
+    ]
+  },
+  {
+    "team": "New Zealand",
+    "wins": [
+      { "type": "Champions Trophy", "date": "15 October 2000" }
+    ]
+  },
+  {
+    "team": "Pakistan",
+    "wins": [
+      { "type": "World Cup", "date": "25 March 1992" },
+      { "type": "Champions Trophy", "date": "18 June 2017" }
+    ]
+  },
+  {
+    "team": "South Africa",
+    "wins": [
+      { "type": "Champions Trophy", "date": "1 November 1998" }
+    ]
+  },
+  {
+    "team": "Sri Lanka",
+    "wins": [
+      { "type": "World Cup", "date": "17 March 1996" },
+      { "type": "Champions Trophy", "date": "30 September 2002", "asterisk": true }
+    ]
+  },
+  {
+    "team": "West Indies",
+    "wins": [
+      { "type": "World Cup", "date": "21 June 1975" },
+      { "type": "World Cup", "date": "23 June 1979" },
+      { "type": "Champions Trophy", "date": "25 September 2004" }
+    ]
+  },
+  {
+    "team": "Zimbabwe",
+    "wins": []
+  }
+]

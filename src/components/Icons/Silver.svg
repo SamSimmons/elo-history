@@ -1,0 +1,68 @@
+<svg width="218" height="252" viewBox="0 0 218 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Canvas</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(335 -53)">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-335 53)" fill="#C4C4C4"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-290 53)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 2">
+<use xlink:href="#path2_fill" transform="translate(-335 60)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 2">
+<use xlink:href="#path2_fill" transform="matrix(-1 0 0 1 -117 60)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 3">
+<use xlink:href="#path3_fill" transform="translate(-266 208)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 3">
+<use xlink:href="#path3_fill" transform="matrix(-1 0 0 1 -177 207)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path4_fill" transform="translate(-266 289)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path5_fill" transform="translate(-234 207)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path6_fill" transform="translate(-334 54)" fill="#C4C4C4"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path7_fill" transform="translate(-289.357 54)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 2">
+<use xlink:href="#path8_fill" transform="translate(-334 60.9444)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 2">
+<use xlink:href="#path8_fill" transform="matrix(-1 0 0 1 -117.73 60.9444)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 3">
+<use xlink:href="#path9_fill" transform="translate(-265.548 207.77)" fill="#C4C4C4"/>
+</g>
+<g id="Vector 3">
+<use xlink:href="#path9_fill" transform="matrix(-1 0 0 1 -177.254 206.778)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path10_fill" transform="translate(-265.548 288.127)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path11_fill" transform="translate(-233.802 206.778)" fill="#C4C4C4"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 218 0L 218 19L 0 19L 0 0Z"/>
+<path id="path1_fill" d="M 133 0L 0 0L 0 63C 0 109.5 25 130 25 130C 25 130 50.5 154 56 154L 79 154C 89 154 111 130 111 130C 111 130 130.5 115 133 69C 135.5 23 133 0 133 0Z"/>
+<path id="path2_fill" d="M 77 121C 52.6667 116.333 3.2 85.6 0 0L 18 0L 18 14C 18 14 14 43 32 68C 50 93 77 104 77 104L 77 121Z"/>
+<path id="path3_fill" d="M 0 82C 10 81.3333 30.4 64 32 0L 32 82L 0 82Z"/>
+<path id="path4_fill" d="M 0 0L 89 0L 89 16L 0 16L 0 0Z"/>
+<path id="path5_fill" d="M 0 0L 25 0L 25 82L 0 82L 0 0Z"/>
+<path id="path6_fill" d="M 0 0L 216.27 0L 216.27 18.8492L 0 18.8492L 0 0Z"/>
+<path id="path7_fill" d="M 131.944 0L 0 0L 0 62.5C 0 108.631 24.8016 128.968 24.8016 128.968C 24.8016 128.968 50.0992 152.778 55.5556 152.778L 78.373 152.778C 88.2937 152.778 110.119 128.968 110.119 128.968C 110.119 128.968 129.464 114.087 131.944 68.4524C 134.425 22.8175 131.944 0 131.944 0Z"/>
+<path id="path8_fill" d="M 76.3889 120.04C 52.2487 115.41 3.1746 84.9206 0 0L 17.8571 0L 17.8571 13.8889C 17.8571 13.8889 13.8889 42.6587 31.746 67.4603C 49.6032 92.2619 76.3889 103.175 76.3889 103.175L 76.3889 120.04Z"/>
+<path id="path9_fill" d="M 0 81.3492C 9.92064 80.6878 30.1587 63.4921 31.746 0L 31.746 81.3492L 0 81.3492Z"/>
+<path id="path10_fill" d="M 0 0L 88.2937 0L 88.2937 15.873L 0 15.873L 0 0Z"/>
+<path id="path11_fill" d="M 0 0L 24.8016 0L 24.8016 81.3492L 0 81.3492L 0 0Z"/>
+</defs>
+</svg>

@@ -4,3 +4,10 @@ export function loadMatches(matches) {
     matches
   }
 }
+
+export function loadTournaments(tournaments) {
+  return {
+    type: 'LOAD_TOURNAMENTS',
+    tournaments
+  }
+}

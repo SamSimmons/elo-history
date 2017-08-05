@@ -38,3 +38,23 @@ body {
   padding-left: 15px;
   text-transform: uppercase;
 }
+
+.sub-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.sub-header .team-selector {
+  flex: 0 1 300px;
+}
+
+.sub-header .wins {
+  flex: 1 1 300px;
+}
+
+.wins {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}

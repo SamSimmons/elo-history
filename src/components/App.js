@@ -1,5 +1,6 @@
 import React from 'react'
 import TeamSelector from './TeamSelector'
+import Wins from './Wins'
 import Chart from './Chart'
 
 const App = (props) => {
@@ -9,7 +10,10 @@ const App = (props) => {
         <div className="title">International ELO Rankings</div>
         <div className="update-time">Updated July 30 2017</div>
       </div>
-      <TeamSelector />
+      <div className="sub-header">
+        <TeamSelector />
+        <Wins />        
+      </div>
       <Chart />
     </div>
   )

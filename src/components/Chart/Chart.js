@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import * as d3 from 'd3'
 import { map, max, min, filter, has } from 'lodash'
 import Axes from './Axes'
+import Annotations from './Annotations'
 import './chart.css'
 import { colorMap } from '../../utils/ui'
 
@@ -64,7 +65,7 @@ class Chart extends Component {
                   key={`team-line-${i}`}
                   d={this.getLine(team, this.filterTeam(team, this.props.data))}
                   style={{
-                    stroke: '#a4a4a4',
+                    stroke: '#dcdbdb',
                     strokeWidth: '1.5px',
                     opacity: '.45',
                     fill: 'transparent'
@@ -72,9 +73,29 @@ class Chart extends Component {
                 />
             )
           }
+          <line
+            x1={this.xScale(this.props.data[0].date)}
+            x2={this.xScale(this.props.data[this.props.data.length - 1].date)}
+            y1={this.yScale(1500)}
+            y2={this.yScale(1500)}
+            style={{
+              stroke: "#5C5C5C",
+              strokeWidth: 2,
+              strokeDasharray: '10, 10'
+            }}
+          />
+          <text
+            x={this.xScale(this.props.data[0].date) - 10}
+            y={this.yScale(1500)}
+            style={{
+              textAnchor: 'end',
+              fontFamily: 'Karla',
+              alignmentBaseline: 'middle'
+            }}
+          >Average</text>
           {
             <path
-              d={this.getLine(this.props.selected, this.filterTeam(this.props.selected,this.props.data))}
+              d={this.getLine(this.props.selected, this.filterTeam(this.props.selected, this.props.data))}
               className="chart__line"
               style={{
                 stroke: colorMap[this.props.selected],
@@ -83,6 +104,13 @@ class Chart extends Component {
               }}
             />
           }
+          <Annotations
+            team={this.props.selected}
+            data={this.props.data}
+            scales={{ xScale:this.xScale, yScale: this.yScale}}
+            margin={margin}
+            dimensions={this.props.dimensions}
+          />
         </g>
       </svg>
     )

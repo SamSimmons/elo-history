@@ -5,15 +5,17 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 import createStore from './create-store'
 import { Provider } from 'react-redux'
-import data from './data/matches.json'
-import { loadMatches } from './actions/matches'
+import data from './data/odi-matches.json'
+import tournaments from './data/tournaments.json'
+import { loadMatches, loadTournaments } from './actions/matches'
 
 const store = createStore()
 store.dispatch(loadMatches(data))
+store.dispatch(loadTournaments(tournaments))
 
 ReactDOM.render(
   <Provider store={store}>
-    <App store={store} />
+    <App />
   </Provider>,
   document.getElementById('root')
 )

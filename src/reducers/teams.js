@@ -4,7 +4,7 @@ import type { State } from '../types/reducers'
 import type { Action } from '../types/actions'
 import { getTeamNames, getElo, filterTeams,  } from '../utils/matches'
 
-export default function (state: State = {list: [], elo: {}}, action: Action) {
+export default function (state: State = {list: [], elo: {}, tournaments: []}, action: Action) {
   switch (action.type) {
     case 'LOAD_MATCHES': {
       const validMatches = filterTeams(action.matches)
@@ -14,6 +14,13 @@ export default function (state: State = {list: [], elo: {}}, action: Action) {
         ...state,
         list: teams,
         ratings
+      }
+    }
+    case 'LOAD_TOURNAMENTS': {
+      const { tournaments } = action
+      return {
+        ...state,
+        tournaments
       }
     }
     default: {

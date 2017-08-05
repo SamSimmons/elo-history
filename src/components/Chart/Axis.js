@@ -21,7 +21,10 @@ export default class Axis extends Component {
       .tickFormat(d => {
         if (this.props.time) {
           return new Date(d).toDateString()
+        } else if (d === 1500) {
+          return ""
         }
+
         return d
       })
 
